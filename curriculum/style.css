@@ -12,3 +12,8 @@ body {
 .personal-info {
   background-color: blue;
 }
+
+.picture {
+  max-width: 100px;
+  
+}
