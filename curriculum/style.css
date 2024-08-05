@@ -10,10 +10,32 @@ body {
 }
 
 .personal-info {
-  background-color: blue;
+  background-color: rgba(8, 9, 69, 0.953);
+  color: white;
+  font-size: 12px;
 }
 
 .picture {
   max-width: 100px;
-  
+  text-align: center;
+  border-radius: 50%;
+  min-width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 30px;
 }
+
+.contacts, .languages {
+  margin-bottom: 30px;
+}
+
+.contacts h2, .languages h2, .social h2 {
+  font-size: 22px;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.contacts h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
