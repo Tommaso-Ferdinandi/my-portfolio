@@ -53,3 +53,26 @@ body {
 .media-profile img {
   max-width: 55%;
 }
+
+.corporate-info {
+  font-size: 12px;
+}
+
+.introduction h1 {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.job-experience h2, .skills h2, .education h2 {
+  font-size: 22px;
+  border-bottom: 2px solid black;
+  margin-left: 5px;
+}
+
+.job-experience h3, .skills h3, .education h3 {
+  font-size: 14px;
+}
+
+.time {
+  font-weight: 600;
+}
