@@ -12,7 +12,7 @@ body {
 .personal-info {
   background-color: rgba(8, 9, 69, 0.953);
   color: white;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .picture {
@@ -31,7 +31,7 @@ body {
 .contacts h2, .languages h2, .social h2 {
   font-size: 22px;
   border-bottom: 1px solid white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .contacts h3 {
@@ -39,3 +39,17 @@ body {
   margin-bottom: 5px;
 }
 
+.languages p {
+  font-size: 12px;
+}
+
+.media-profile {
+  margin-bottom: 30px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.media-profile img {
+  max-width: 55%;
+}
