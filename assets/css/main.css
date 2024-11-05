@@ -9,11 +9,12 @@ body {
 }
 
 .navbar {
-  padding: 30px 10px;
+  padding: 40px 10px;
+  background-color: rgb(0, 0, 75) !important;
+  color: white;
 }
-
-.navbar-brand {
-  font-size: 1.6em;
+.navbar .navbar-brand {
+  font-size: 1.8em;
 }
 
 .about {
@@ -22,9 +23,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 30px 10px;
-  font-size: 1em;
+  font-size: 1.1em;
   font-style: italic;
   margin-top: 10px;
+  border-bottom: 2px solid rgb(0, 0, 75);
 }
 .about .profile-picture {
   max-width: 30%;
@@ -33,51 +35,95 @@ body {
   margin-right: 5px;
   border-radius: 50%;
 }
+.about .description {
+  margin-left: 10px;
+}
 
 .skills, .contact, .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 2px solid rgb(0, 0, 75);
+  padding: 50px 0px;
 }
-.skills .skills-level, .contact .skills-level, .projects .skills-level {
+
+.skills-level {
   width: 90%;
 }
-.skills .skills-level .progress, .contact .skills-level .progress, .projects .skills-level .progress {
+.skills-level span {
+  font-size: 0.9em;
+}
+.skills-level .progress {
   margin-bottom: 10px;
   width: 100%;
+}
+.skills-level .progress .progress-bar {
+  background-color: rgba(0, 0, 75, 0.8);
 }
 
 section h2 {
   text-align: center;
-  padding: 20px;
-  margin-top: 10px;
+  padding-bottom: 30px;
 }
 
 .projects .card {
   width: 60%;
+  max-height: 500px;
+}
+.projects .card a {
+  background-color: rgba(0, 0, 75, 0.8);
+  margin-right: 10px;
+}
+.projects .card a:hover {
+  background-color: rgba(0, 0, 75, 0.7);
+}
+.projects .card a:active {
+  background-color: rgb(0, 0, 75);
 }
 
+.contact {
+  border-bottom: none;
+  min-height: 300px;
+}
 .contact p {
   margin-bottom: 30px;
   text-align: center;
 }
+.contact .buttons {
+  margin-top: 10px;
+}
 .contact a {
+  background-color: rgba(0, 0, 75, 0.8);
   margin-right: 10px;
+}
+.contact a:hover {
+  background-color: rgba(0, 0, 75, 0.7);
+}
+.contact a:active {
+  background-color: rgb(0, 0, 75);
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0px;
+  padding: 50px 0px 30px 0px;
   width: 100%;
+  background-color: rgb(0, 0, 75);
+  color: white;
+  border: 2px solid rgb(0, 0, 75);
 }
 footer p {
-  width: 50%;
+  width: 40%;
+  font-size: 0.6em;
+  text-align: center;
 }
 footer nav {
-  margin-right: 20px;
+  margin: 0px 30px 20px 0px;
+  max-width: 20%;
+  max-height: 10%;
 }
 footer nav a {
   padding: 5px;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
