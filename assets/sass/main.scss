@@ -39,6 +39,8 @@ body {
     float: left;
     margin-right: 5px;
     border-radius: 50%;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px gray;
   }
   
   .description {
@@ -81,8 +83,21 @@ section {
 
 .projects {
   @extend .skills;
+  .all-cards {
+    display: flex;
+    justify-content: center;
+  }
   .card {
     width:60%;
+    border: 2px solid gray;
+    box-shadow: 5px 5px 5px gray;
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      padding: 10px;
+      text-align: center;
+    }
 
     a {
       background-color: $secondary-color;
@@ -95,7 +110,7 @@ section {
 
     a:active {
       background-color: $primary-color;
-    } 
+    }
   }
 }
 
@@ -152,5 +167,31 @@ footer {
       padding: 5px;
       text-decoration: none;
     }
+  }
+}
+
+
+@media (min-width: 769px){
+  .core {
+    display: block;
+    max-width: 80%;
+  }
+
+  .card-2 {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 993px){
+  .core {
+    display: block;
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1201px){
+  .core {
+    display: block;
+    max-width: 60%;
   }
 }

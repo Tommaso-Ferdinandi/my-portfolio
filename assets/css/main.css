@@ -34,6 +34,8 @@ body {
   float: left;
   margin-right: 5px;
   border-radius: 50%;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 5px gray;
 }
 .about .description {
   margin-left: 10px;
@@ -66,8 +68,20 @@ section h2 {
   padding-bottom: 30px;
 }
 
+.projects .all-cards {
+  display: flex;
+  justify-content: center;
+}
 .projects .card {
   width: 60%;
+  border: 2px solid gray;
+  box-shadow: 5px 5px 5px gray;
+}
+.projects .card img {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+  text-align: center;
 }
 .projects .card a {
   background-color: rgba(0, 0, 75, 0.8);
@@ -125,4 +139,26 @@ footer nav {
 footer nav a {
   padding: 5px;
   text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .core {
+    display: block;
+    max-width: 80%;
+  }
+  .card-2 {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 993px) {
+  .core {
+    display: block;
+    max-width: 70%;
+  }
+}
+@media (min-width: 1201px) {
+  .core {
+    display: block;
+    max-width: 60%;
+  }
 }/*# sourceMappingURL=main.css.map */
