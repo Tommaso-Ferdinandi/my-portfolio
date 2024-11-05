@@ -68,7 +68,6 @@ section h2 {
 
 .projects .card {
   width: 60%;
-  max-height: 500px;
 }
 .projects .card a {
   background-color: rgba(0, 0, 75, 0.8);

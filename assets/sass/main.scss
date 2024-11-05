@@ -11,11 +11,11 @@ body {
   font-family: "Roboto", sans-serif ;
 }
 
-
 .navbar {
   padding: 40px 10px;
   background-color: $primary-color !important;
   color: white;
+  
 
   .navbar-brand {
     font-size: 1.8em;
@@ -81,10 +81,8 @@ section {
 
 .projects {
   @extend .skills;
-
   .card {
     width:60%;
-    max-height: 500px;
 
     a {
       background-color: $secondary-color;
@@ -156,4 +154,3 @@ footer {
     }
   }
 }
-
