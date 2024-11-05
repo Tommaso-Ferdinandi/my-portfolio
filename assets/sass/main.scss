@@ -1,0 +1,106 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: rgb(0,0,75);
+$navbar-dark-color: primary-color;
+
+body {
+  font-family: "Roboto", sans-serif ;
+}
+
+.navbar {
+  padding: 30px 10px;
+}
+
+.navbar-brand {
+  font-size: 1.6em;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 10px;
+
+  .profile-picture {
+    max-width: 30%;
+    max-height: 30%;
+    float: left;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .skills-level {
+    width:90%;
+
+    .progress {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+}
+
+section {
+  h2 {
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  }
+}
+
+
+.projects {
+  @extend .skills;
+
+  .card {
+    width:60%;
+  }
+}
+
+.contact {
+  @extend .skills;
+
+  p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  a {
+    margin-right: 10px;
+    }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+  width: 100%;
+
+  p {
+    width: 50%;
+  }
+
+  nav {
+    margin-right: 20px;
+    
+    a {
+      padding: 5px;
+    }
+  }
+}
+
