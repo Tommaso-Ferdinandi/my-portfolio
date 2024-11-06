@@ -1,0 +1,17 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+  line-break: 120%;
+
+  li {
+    list-style: none;
+  }
+}
+
