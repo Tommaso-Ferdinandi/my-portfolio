@@ -15,7 +15,10 @@ body {
   color: white;
 }
 .navbar #name {
-  font-size: 1.8em;
+  font-size: 2em;
+}
+.navbar span {
+  display: block;
 }
 
 .about {
@@ -143,9 +146,6 @@ footer nav a {
 }
 
 @media (min-width: 769px) {
-  .navbar #name {
-    font-size: 2em;
-  }
   .core {
     display: block;
     max-width: 80%;
@@ -170,6 +170,9 @@ footer nav a {
   }
 }
 @media (min-width: 993px) {
+  .navbar {
+    position: static !important;
+  }
   .navbar #name {
     font-size: 2.2em;
   }
