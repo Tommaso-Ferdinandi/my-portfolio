@@ -14,7 +14,7 @@ body {
   background-color: rgb(0, 0, 75) !important;
   color: white;
 }
-.navbar .navbar-brand {
+.navbar #name {
   font-size: 1.8em;
 }
 
@@ -119,10 +119,10 @@ section h2 {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 50px 0px 30px 0px;
-  width: 100%;
+  min-width: 100%;
   background-color: rgb(0, 0, 75);
   color: white;
   border: 2px solid rgb(0, 0, 75);
@@ -143,23 +143,91 @@ footer nav a {
 }
 
 @media (min-width: 769px) {
+  .navbar #name {
+    font-size: 2em;
+  }
   .core {
     display: block;
     max-width: 80%;
   }
-  .card-2 {
+  .core .description p {
+    font-size: 1.2em;
+  }
+  .core section h2 {
+    font-size: 1.7em;
+  }
+  .core .skills span, .core .projects span, .core .contact span {
+    font-size: 1em;
+  }
+  .core .card-2 {
     margin-left: 40px;
+  }
+  .core .contact p {
+    font-size: 1.1em;
+  }
+  footer p {
+    font-size: 0.7em;
   }
 }
 @media (min-width: 993px) {
+  .navbar #name {
+    font-size: 2.2em;
+  }
+  .navbar a {
+    font-size: 1.1em;
+  }
   .core {
     display: block;
     max-width: 70%;
   }
+  .core .description p {
+    font-size: 1.3em;
+  }
+  .core section h2 {
+    font-size: 1.8em;
+  }
+  .core .skills span, .core .projects span, .core .contact span {
+    font-size: 1.1em;
+  }
+  .core .contact p {
+    font-size: 1.2em;
+  }
+  footer p {
+    font-size: 0.8em;
+    margin-right: 300px;
+  }
+  footer nav {
+    margin-right: 100px;
+  }
 }
 @media (min-width: 1201px) {
+  .navbar #name {
+    font-size: 2.4em;
+  }
+  .navbar a {
+    font-size: 1.2em;
+  }
   .core {
     display: block;
     max-width: 60%;
+  }
+  .core .description p {
+    font-size: 1.4em;
+  }
+  .core section h2 {
+    font-size: 1.9em;
+  }
+  .core .skills span, .core .projects span, .core .contact span {
+    font-size: 1.2em;
+  }
+  .core .contact p {
+    font-size: 1.3em;
+  }
+  footer p {
+    font-size: 0.9em;
+    margin-right: 450px;
+  }
+  footer nav {
+    margin-right: 150px;
   }
 }/*# sourceMappingURL=main.css.map */
