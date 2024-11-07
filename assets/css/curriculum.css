@@ -15,15 +15,22 @@ body {
 .informazioni-personali {
   padding-top: 20px;
 }
-.informazioni-personali img {
-  max-height: 130px;
-  padding-left: 0px;
+.informazioni-personali .profilo {
+  max-height: 120px;
+  max-width: 140px;
+  padding-left: 10px;
 }
 .informazioni-personali .generalita h1 {
-  font-size: 1.6em;
+  font-size: 1.4em;
+}
+.informazioni-personali .generalita ul {
+  padding-left: 0px;
 }
 .informazioni-personali .generalita li {
   list-style-type: none;
+}
+.informazioni-personali .generalita li img {
+  max-width: 12px;
 }
 .informazioni-personali .generalita li span, .informazioni-personali .generalita li a {
   font-size: 0.9em;
@@ -33,19 +40,50 @@ body {
   color: black;
 }
 
-.lavoro h2, .istruzione h2 {
-  font-size: 1.4em;
+.lavoro h2, .competenze h2, .istruzione h2 {
+  font-size: 1.2em;
   padding-bottom: 5px;
   margin-top: 10px;
   border-bottom: 1px solid black;
+  border-width: 50%;
 }
 
 .titolo, .istruzione {
   margin-top: 10px;
 }
 .titolo h3, .istruzione h3 {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .titolo p, .istruzione p {
   font-size: 0.9em;
+}
+
+.competenze div {
+  margin-left: 20px;
+}
+.competenze div li {
+  font-size: 0.9em;
+  list-style-type: square;
+}
+
+.lingue h2 {
+  font-size: 1.2em;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+.lingue th {
+  font-size: 14px;
+}
+.lingue td {
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  .cv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px gray;
+  }
 }/*# sourceMappingURL=curriculum.css.map */

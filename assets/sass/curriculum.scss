@@ -16,18 +16,26 @@ body {
 .informazioni-personali {
   padding-top: 20px;
 
-  img {
-    max-height: 130px;
-    padding-left: 0px;
+  .profilo {
+    max-height: 120px;
+    max-width: 140px;
+    padding-left: 10px;
   }
 
   .generalita {
     h1 {
-      font-size: 1.6em;
+      font-size: 1.4em;
+    }
+
+    ul {
+      padding-left: 0px;
     }
 
     li {
       list-style-type:none ;
+      img {
+        max-width: 12px;
+      }
       span {
         font-size: 0.9em;
       }
@@ -43,17 +51,18 @@ body {
 
 .lavoro {
   h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding-bottom: 5px;
     margin-top: 10px;
     border-bottom: 1px solid black;
+    border-width: 50%;
   }
 }
 
 .titolo {
   margin-top: 10px;
   h3 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   p {
@@ -66,3 +75,42 @@ body {
   @extend .titolo;
 }
 
+.competenze {
+  @extend .lavoro;
+
+  div {
+    margin-left:20px;
+
+    li {
+      font-size: 0.9em;
+      list-style-type: square;
+    }
+  }
+}
+
+.lingue {
+  h2 {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+  td {
+    font-size: 14px;
+  }
+  
+}
+
+@media (min-width:576px) {
+  .cv {
+    display: block;
+    // width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px gray;
+  }
+}

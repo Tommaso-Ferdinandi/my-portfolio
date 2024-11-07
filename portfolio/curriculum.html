@@ -3,9 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hi, I'm Tommaso, this is my curriculum looking for a web dev job.">
-  <title>Curriculum</title>
+  <meta name="description" content="Ciao sono Tommaso, aspirante Back-End Developer, questo è il mio curriculum">
+  <!-- open graph -->
+  <meta name="og:title" content="Curriculum Vitae - Tommaso Ferdinandi">
+  <meta name="og:description" content="Ciao sono Tommaso, aspirante Back-End Developer, questo è il mio curriculum">
+  <meta name="og:image" content="">
+  <meta name="og:url" content="">
+  <meta name="og:type" content="website">
   <!-- favicon -->
+  <link rel="icon" href="/assets/images/cv.png" type="image/x-icon">
+  <!-- title -->
+  <title>Curriculum Vitae - Tommaso Ferdinandi</title>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +23,31 @@
   <!-- css -->
   <link rel="stylesheet" href="/assets/css/curriculum.css">
 </head>
-<body>
-  <main class="cv container">
+<body class="row">
+  <main class="cv col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6 col-xxl-5  container">
     <!-- sezione relativa alle generalità -->
     <section class="container-fluid row informazioni-personali">
-      <img class="col-4" src="/assets/images/small-profile-picture.jpg" alt="profile-picture" srcset="/assets/images/profile-picture.jpg 2x, /assets/images/small-profile-picture.jpg 1x">
+      <img class="profilo col-4" src="/assets/images/small-profile-picture.jpg" alt="profile-picture" srcset="/assets/images/profile-picture.jpg 2x, /assets/images/small-profile-picture.jpg 1x">
       <div class="col-8 generalita">
         <h1>Tommaso Ferdinandi</h1>
         <ul>
           <li>
+            <img src="/assets/images/favicon-phone-16x16.png" alt="icona-telefono">
             <span>+39 3895292262</span>
           </li>
           <li>
+            <img src="/assets/images/favicon-email-16x16.png" alt="icona-email">
             <span>tommaso.ferdinandi99@gmail.com</span>
           </li>
           <li>
+            <img src="/assets/images/favicon-home-16x16.png" alt="icona-casa">
             <span>Via Appia Nuova 679, Roma.</span>
           </li>
           <!-- <li>
             sito personale
           </li> -->
           <li>
+            <img src="/assets/images/favicon-github-16x16.png" alt="icona-github">
             <a href="https://www.github.com/Tommaso-Ferdinandi" target="blank">Github</a>
           </li>
         </ul>
@@ -47,7 +59,7 @@
       <h2>Esperienze lavorative</h2>
       <div class="row titolo">
         <h3 class="col-8">Rider Deliveroo</h3>
-        <p class="col-4">2018-Presente</p>
+        <p class="col-4">2018 - Presente</p>
         <p class="col-10 descrizione">Lavorare come rider per Deliveroo mi ha insegnato l'importanza ad essere responsabile dei propri errori e proattivo nel risolvere i problemi dei clienti per soddisfare i loro bisogni. </p>
       </div>
     </section>
@@ -57,43 +69,51 @@
       <h2>Istruzione</h2>
       <div class="row titolo">
         <h3 class="col-8">Master Back End Development</h3>
-        <p class="date col-4">2023-Presente</p>
+        <p class="date col-4">2023 - Presente</p>
+        <p class="col-10 descrizione">All'interno del Master ho appreso i linguaggi di programmazione più richiesti dalle aziende, realizzando per ciascuno di essi progetti  corretti da professionisti senior del settore. </p>
       </div>
 
       <div class="row titolo">
         <h3 class="col-8">Liceo Scientifico Bertrand Russell</h3>
-        <p class="col-4">2018-2023</p>
+        <p class="col-4">2018 - 2023</p>
+        <p class="col-10 descrizione">Diploma di istruzione secondaria di secondo grado con votazione 78/100.</p>
       </div>
     </section>
     
     <!-- sezione relativa alle competenze tecniche (hard skills) -->
     <section class="container-fluid competenze">
       <h2>Competenze Tecniche</h2>
-      <ul>
-        <li> Html</li>
-        <li> Css</li>
-        <li> Bootstrap</li>
-        <li> Sass</li>
-        <li> Python</li>
-      </ul>
+      <div class="row">
+        <ul class="col">
+          <li> Html</li>
+          <li> Css</li>
+          <li> Bootstrap</li>
+        </ul>
+        <ul class="col">
+          <li> Sass</li>
+          <li> Python</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="languages">
-      <table>
-        <thead>
+    <!-- sezione relativa alle lingue -->
+    <section class="container-fluid lingue">
+      <h2>Competenze Linguistiche</h2>
+      <table class="table table-bordered table-sm">
+        <thead class="table-light">
           <tr>
-            <th></th>
-            <th>Ascolto</th>
-            <th>Dialogo</th>
-            <th>Scrittura</th>
+            <th scope="col">Lingue</th>
+            <th scope="col">Ascolto</th>
+            <th scope="col">Dialogo</th>
+            <th scope="col">Scrittura</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Italiano</td>
             <td>Madrelingua</td>
-            <td>"</td>
-            <td>"</td>
+            <td>-</td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Inglese</td>
@@ -112,7 +132,7 @@
     </section>
   </main>
 
-  <!-- bootstrap js and popper -->
+  <!-- bootstrap js e popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
