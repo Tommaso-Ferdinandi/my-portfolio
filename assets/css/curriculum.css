@@ -4,12 +4,48 @@
   box-sizing: border-box;
 }
 
-.cv {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 30px;
-  line-break: 120%;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.cv li {
-  list-style: none;
+
+.cv {
+  margin: 10px 0px;
+}
+
+.informazioni-personali {
+  padding-top: 20px;
+}
+.informazioni-personali img {
+  max-height: 130px;
+  padding-left: 0px;
+}
+.informazioni-personali .generalita h1 {
+  font-size: 1.6em;
+}
+.informazioni-personali .generalita li {
+  list-style-type: none;
+}
+.informazioni-personali .generalita li span, .informazioni-personali .generalita li a {
+  font-size: 0.9em;
+}
+.informazioni-personali .generalita li a {
+  text-decoration: none;
+  color: black;
+}
+
+.lavoro h2, .istruzione h2 {
+  font-size: 1.4em;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+.titolo, .istruzione {
+  margin-top: 10px;
+}
+.titolo h3, .istruzione h3 {
+  font-size: 1.1em;
+}
+.titolo p, .istruzione p {
+  font-size: 0.9em;
 }/*# sourceMappingURL=curriculum.css.map */

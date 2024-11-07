@@ -10,17 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- css -->
   <link rel="stylesheet" href="/assets/css/curriculum.css">
 </head>
 <body>
-  <main class="cv">
-    <header class="informazioni-personali">
-      
-      <div class="generalita">
-        <img src="/assets/images/small-profile-picture.jpg" alt="profile-picture" srcset="/assets/images/profile-picture.jpg 2x, /assets/images/small-profile-picture.jpg 1x"
-      style="max-width: 120px;">
-        <p>Tommaso Ferdinandi</p>
+  <main class="cv container">
+    <!-- sezione relativa alle generalità -->
+    <section class="container-fluid row informazioni-personali">
+      <img class="col-4" src="/assets/images/small-profile-picture.jpg" alt="profile-picture" srcset="/assets/images/profile-picture.jpg 2x, /assets/images/small-profile-picture.jpg 1x">
+      <div class="col-8 generalita">
+        <h1>Tommaso Ferdinandi</h1>
         <ul>
           <li>
             <span>+39 3895292262</span>
@@ -39,24 +40,34 @@
           </li>
         </ul>
       </div>
-    </header>
+    </section>
 
-    <section class="lavori">
-      <h2>Rider Deliveroo</h2>
-      <h3>2018-Presente</h3>
-      <p>Lavorare come rider per Deliveroo mi ha insegnato l'importanza ad essere responsabile dei propri errori e proattivo nel risolvere i problemi dei clienti per soddisfare i loro bisogni. </p>
+    <!-- sezione relativa al lavoro -->
+    <section class="container-fluid lavoro">
+      <h2>Esperienze lavorative</h2>
+      <div class="row titolo">
+        <h3 class="col-8">Rider Deliveroo</h3>
+        <p class="col-4">2018-Presente</p>
+        <p class="col-10 descrizione">Lavorare come rider per Deliveroo mi ha insegnato l'importanza ad essere responsabile dei propri errori e proattivo nel risolvere i problemi dei clienti per soddisfare i loro bisogni. </p>
+      </div>
     </section>
     
-    <section class="istruzione">
-      <h2>Master Back End Development</h2>
-      <h3>2024-Presente</h3>
+    <!-- sezione relativa all'istruzione -->
+    <section class="container-fluid istruzione">
+      <h2>Istruzione</h2>
+      <div class="row titolo">
+        <h3 class="col-8">Master Back End Development</h3>
+        <p class="date col-4">2023-Presente</p>
+      </div>
 
-      <h2>Liceo Scientifico Bertrand Russell</h2>
-      <h3>2013-2018</h3>
-      <p>78/100</p>
+      <div class="row titolo">
+        <h3 class="col-8">Liceo Scientifico Bertrand Russell</h3>
+        <p class="col-4">2018-2023</p>
+      </div>
     </section>
     
-    <section class="competenze">
+    <!-- sezione relativa alle competenze tecniche (hard skills) -->
+    <section class="container-fluid competenze">
       <h2>Competenze Tecniche</h2>
       <ul>
         <li> Html</li>
@@ -100,5 +111,9 @@
       </table>
     </section>
   </main>
+
+  <!-- bootstrap js and popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

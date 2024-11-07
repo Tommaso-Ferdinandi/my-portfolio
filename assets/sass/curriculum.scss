@@ -4,14 +4,65 @@
   box-sizing: border-box;
 }
 
-.cv {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 30px;
-  line-break: 120%;
+body {
+  font-family: "Roboto", sans-serif;
+}
 
-  li {
-    list-style: none;
+.cv {
+  margin: 10px 0px;
+}
+
+
+.informazioni-personali {
+  padding-top: 20px;
+
+  img {
+    max-height: 130px;
+    padding-left: 0px;
   }
+
+  .generalita {
+    h1 {
+      font-size: 1.6em;
+    }
+
+    li {
+      list-style-type:none ;
+      span {
+        font-size: 0.9em;
+      }
+
+      a {
+        @extend span;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.lavoro {
+  h2 {
+    font-size: 1.4em;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.titolo {
+  margin-top: 10px;
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+.istruzione {
+  @extend .lavoro;
+  @extend .titolo;
 }
 
