@@ -104,6 +104,14 @@ body {
   
 }
 
+.autorizzazione {
+  margin-top: 40px;
+  p {
+    width: 50%;
+    font-size: 0.6em;
+  }
+}
+
 @media (min-width:576px) {
   .cv {
     display: block;
