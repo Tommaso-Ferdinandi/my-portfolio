@@ -15,4 +15,28 @@ form {
 fieldset {
   display: flex;
   flex-direction: column;
+  border: 1px solid gray;
+  padding: 15px 30px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+legend {
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+
+.row, #file, textarea {
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-top: 10px;
+  padding-left: 5px;
+  max-width: 300px;
+  min-height: 150px;
+}
+
+button {
+  margin: 0px 20px 0px 10px;
 }/*# sourceMappingURL=form.css.map */

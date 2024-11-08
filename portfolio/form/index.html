@@ -24,36 +24,36 @@
   <link rel="stylesheet" href="/assets/css/form.css">
 </head>
 <body class="row">
-  <main class="contattami col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6 col-xxl-5  container">
+  <main class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4  container">
     <!-- form -->
-    <form  action="" method="post">
+    <form id="contattami"  action="" method="post">
       <!-- riquadro del form -->
-      <fieldset>
+      <fieldset form="contattami">
         <legend> Contattami </legend>
         <!-- nome -->
         <div class="row">
-          <label class="col-4" for="nome"> Nome </label>
+          <label class="col-3" for="nome"> Nome </label>
           <input class="col-6"type="text" id="nome" name="nome" required>
         </div>
         <!-- cognome -->
         <div class="row">
-          <label class="col-4" for="cognome"> Cognome </label>
+          <label class="col-3" for="cognome"> Cognome </label>
           <input class="col-6"type="text" id="cognome" name="cognome" required>
         </div>
         <!-- azienda -->
         <div class="row">
-          <label class="col-4" for="azienda"> Azienda </label>
+          <label class="col-3" for="azienda"> Azienda </label>
           <input class="col-6"type="text" id="azienda" name="azienda">
         </div>
         <!-- email -->
         <div class="row">
-          <label class="col-4" for="email"> E-mail </label>
+          <label class="col-3" for="email"> E-mail </label>
           <input class="col-6"type="email" id="email" name="email" required placeholder="esempio@gmail.com">
         </div>
         <!-- motivo -->
         <div class="row">
-          <label class="col-4" for="motivo">Motivo</label>
-          <select class="col-4" name="motivo" id="motivo">
+          <label class="col-3" for="motivo">Motivo</label>
+          <select class="col-6" name="motivo" id="motivo">
             <option value="consulenza">-</option>
             <option value="consulenza">Consulenza</option>
             <option value="consulenza">Offerta di lavoro</option>
@@ -80,8 +80,8 @@
           <button class=" col-4 btn btn-light" type="reset">Ricomincia</button>
          </div>
       </fieldset>
-
     </form>
+    
   </main>
 
   <!-- my js -->
